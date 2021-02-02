@@ -102,10 +102,10 @@ class LatestData extends Component {
             ]
         }
         return (
-            <section className="about">
+            <section className="latestdata">
                 <div className="container py-5 my-5">
                     <div className="row">
-                        <div className="col-12 text-center">
+                        <div className="col-12 text-center mb-5">
                             <h2>Latest Data</h2>
                         </div>
                         <div className="col-12 text-center">

@@ -4,7 +4,7 @@ class HowTo extends Component {
 
     render() {
         return (
-            <section className="about">
+            <section className="howto">
                 <div className="container py-5 my-2">
                     <div className="row text-center">
                         <div className="col-12 text-center">

@@ -14,7 +14,7 @@ class Symptom extends Component {
                             </p>
                             <div className="symptom-title">
                                 <h2>
-                                    What is novel coronavirus?
+                                    What are the symptoms?
                                 </h2>
                             </div>
                             <div className="symptom-description">
