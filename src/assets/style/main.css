@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/*Hero Style*/
+.jumbotron {
+    background-image:  url("../img/heroBg.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-color: white !important;
+    background-size: 35rem;
+}
+
+.hero-container {
+    margin-top: 7rem;
+}
+
+
+.hero-container h1 {
+    font-weight: 500;
+    font-size: 4rem;
+    color: #18191a !important;
+}
+
+.hero-container p {
+    color: darkgrey;
+    font-weight: 300;
+}
+
+* {font-family: 'Nunito Sans', sans-serif;}
+
+.symptom {
+    background: #F9F9F9;
+}
+
+
+
+h1,h2,h3,h4,h5 {
+    color: #18191A !important;
+    font-weight: bold !important;
+}
+
+.btn-lg {
+    box-shadow: 0px 20px 50px rgba(235, 69, 89, 0.27) !important;
+    padding: 22px 45px !important;
+    transition: all .5s !important;
+    transform: translateY(0) !important;
+    display: inline-block !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 16px !important;
+    text-transform: capitalize !important;
+}
+
+.cta-container {
+    padding-left: 7rem !important;
+    padding-right: 7rem !important;
+}
+
+.cta-container .card {
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+}
+
+
+
+p {
+    color: darkgrey !important;
+}
+
+.hero-badge svg {
+    margin-right: 0.5rem;
+}
+
+.hero-badge {
+    background: #FDECEE !important;
+    padding: 5px 15px !important;
+    font-weight: 600 !important;
+    border-radius: 30px !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    color: #EB4559 !important;
+    margin-bottom: 30px !important;
+    text-transform: capitalize !important;
+}
+
+
+
+section {
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+}
+
+.footer {
+    background: #151D41;
+}
+
+.footer h3 {
+    color: white !important;
+}
+
+hr {
+    color: white !important;
+}
+
+
+.btn-danger {
+    background: #dc143c !important;
+}
+
+.btn-danger:hover {
+    background: #18191A !important;
+}
+
+.infobar-container {
+    box-shadow:
+            0 0.7px 2.2px rgba(0, 0, 0, 0.02),
+            0 1.7px 5.3px rgba(0, 0, 0, 0.028),
+            0 3.1px 10px rgba(0, 0, 0, 0.035),
+            0 5.6px 17.9px rgba(0, 0, 0, 0.042),
+            0 10.4px 33.4px rgba(0, 0, 0, 0.05),
+            0 25px 80px rgba(0, 0, 0, 0.07)
+;
+
+}
