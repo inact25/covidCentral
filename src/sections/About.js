@@ -15,9 +15,12 @@ class About extends Component {
                             <p className="hero-badge">
                                 <AiOutlineInfoCircle/>   Covid-19 Alert
                             </p>
+                            <div className="about-title">
                             <h2>
                                 What is novel coronavirus?
                             </h2>
+                            </div>
+                            <div className="about-description">
                             <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered
                                 coronavirus.
 
@@ -29,6 +32,7 @@ class About extends Component {
                                 COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others
                                 from infection by washing your hands or using an alcohol based rub frequently and not
                                 touching your face. </p>
+                            </div>
                             <div className="hero-action mb-2 mt-5">
                                 <button className="btn-danger btn btn-lg rounded-pill">Check Symptom</button>
                             </div>
