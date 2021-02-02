@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
 
+:root {
+    --vl-color-primary: #151d41;
+    --vl-color-secondary: #6C7083;
+    --vl-color-success : #70D37A;
+    --vl-color-danger : #EB4559;
+    --vl-color-dark : #263238;
+}
 /*Global Style*/
 
 * {font-family: 'Nunito Sans', sans-serif;}
@@ -25,6 +32,17 @@ h1,h2,h3,h4,h5 {
     text-transform: capitalize !important;
 }
 
+.card {
+    border: none !important;
+    box-shadow: 0 0px 2.2px rgba(0, 0, 0, 0.014),
+    0 0px 5.3px rgba(0, 0, 0, 0.02),
+    0 0px 10px rgba(0, 0, 0, 0.025),
+    0 0px 17.9px rgba(0, 0, 0, 0.03),
+    0 0px 33.4px rgba(0, 0, 0, 0.036),
+    0 0px 80px rgba(0, 0, 0, 0.05);
+border-radius: 1rem !important;
+}
+
 /*Hero Style*/
 
 .jumbotron {
@@ -44,7 +62,6 @@ h1,h2,h3,h4,h5 {
     font-size: 4rem;
     color: #151d41 !important;
 }
-
 
 .hero-container h5 {
     color: #6C7083  !important;
@@ -119,6 +136,27 @@ h1,h2,h3,h4,h5 {
 
 .info-description p {
     color: ghostwhite  !important;
+    font-weight: 600 !important;
+}
+
+/*HowTo*/
+.howto {
+    color: #6C7083  !important;
+}
+
+.howto h2 {
+    font-size: 2.5rem !important;
+    color: #151D41 !important;
+    font-weight: 800 !important;
+
+}
+
+.howto h5 {
+    color: #151D41 !important;
+}
+
+.howto-description p {
+    color: #6C7083  !important;
     font-weight: 600 !important;
 }
 
