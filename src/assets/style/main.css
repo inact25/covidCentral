@@ -1,40 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
 
-/*Hero Style*/
-.jumbotron {
-    background-image:  url("../img/heroBg.png");
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-color: white !important;
-    background-size: 35rem;
-}
-
-.hero-container {
-    margin-top: 7rem;
-}
-
-
-.hero-container h1 {
-    font-weight: 500;
-    font-size: 4rem;
-    color: #18191a !important;
-}
-
-.hero-container p {
-    color: darkgrey;
-    font-weight: 300;
-}
+/*Global Style*/
 
 * {font-family: 'Nunito Sans', sans-serif;}
 
-.symptom {
-    background: #F9F9F9;
-}
-
-
-
 h1,h2,h3,h4,h5 {
-    color: #18191A !important;
     font-weight: bold !important;
 }
 
@@ -50,6 +20,65 @@ h1,h2,h3,h4,h5 {
     text-transform: capitalize !important;
 }
 
+/*Hero Style*/
+
+.jumbotron {
+    background-image:  url("../img/heroBg.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-color: white !important;
+    background-size: 35rem;
+}
+
+.hero-container {
+    margin-top: 3rem;
+}
+
+.hero-container h1 {
+    font-weight: 800 !important;
+    font-size: 4rem;
+    color: #151d41 !important;
+}
+
+
+.hero-container h5 {
+    color: #6C7083  !important;
+    font-weight: 500 !important;
+    padding-right: 3rem;
+}
+
+/*Infobar*/
+.infobar-container h3 {
+    font-weight: 800 !important;
+    font-size: 3rem;
+}
+
+.infobar-container p {
+    color: #6C7083  !important;
+    font-weight: 600 !important;
+}
+
+.about h2 {
+    font-size: 2.5rem !important;
+    color: #151d41 !important;
+    font-weight: 800 !important;
+
+}
+
+.about p {
+    color: #6C7083  !important;
+    font-weight: 600 !important;
+}
+
+.symptom {
+    background: #F9F9F9;
+}
+
+
+
+
+
+
 .cta-container {
     padding-left: 7rem !important;
     padding-right: 7rem !important;
@@ -58,12 +87,6 @@ h1,h2,h3,h4,h5 {
 .cta-container .card {
     padding-right: 5rem !important;
     padding-left: 5rem !important;
-}
-
-
-
-p {
-    color: darkgrey !important;
 }
 
 .hero-badge svg {
@@ -120,7 +143,5 @@ hr {
             0 3.1px 10px rgba(0, 0, 0, 0.035),
             0 5.6px 17.9px rgba(0, 0, 0, 0.042),
             0 10.4px 33.4px rgba(0, 0, 0, 0.05),
-            0 25px 80px rgba(0, 0, 0, 0.07)
-;
-
+            0 25px 80px rgba(0, 0, 0, 0.07);
 }

@@ -12,11 +12,9 @@ class About extends Component {
                             <img src={aboutImg} alt="" className="img-fluid"/>
                         </div>
                         <div className="col-12 col-md-6 col-lg-6 order-2 order-md-2 order-lg-2">
-                            <div className="hero-badge">
-                                <button type="button" className="btn btn-sm btn-outline-danger rounded-pill mb-2">
-                                    <span style={{fontSize:"1.15rem"}}><AiOutlineInfoCircle/></span> Covid-19 Alert
-                                </button>
-                            </div>
+                            <p className="hero-badge">
+                                <AiOutlineInfoCircle/>   Covid-19 Alert
+                            </p>
                             <h2>
                                 What is novel coronavirus?
                             </h2>
@@ -31,7 +29,7 @@ class About extends Component {
                                 COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others
                                 from infection by washing your hands or using an alcohol based rub frequently and not
                                 touching your face. </p>
-                            <div className="hero-action mb-2">
+                            <div className="hero-action mb-2 mt-5">
                                 <button className="btn-danger btn btn-lg rounded-pill">Check Symptom</button>
                             </div>
                         </div>
