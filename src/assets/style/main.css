@@ -70,8 +70,27 @@ h1,h2,h3,h4,h5 {
     font-weight: 600 !important;
 }
 
+/*Symptoms*/
 .symptom {
     background: #F9F9F9;
+}
+
+.symptom h2 {
+    font-size: 2.5rem !important;
+    color: #151d41 !important;
+    font-weight: 800 !important;
+
+}
+
+.symptom-description p {
+    color: #6C7083  !important;
+    font-weight: 600 !important;
+}
+
+
+.symptom-list {
+    color: #6C7083  !important;
+    font-weight: 600 !important;
 }
 
 
