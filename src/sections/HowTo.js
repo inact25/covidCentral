@@ -18,8 +18,8 @@ class HowTo extends Component {
                             <p>If you are traveling overseas (to China but also to other places)
                                 follow the CDC’s guidance:</p>
                         </div>
-                        <div className="col-6">
-                            <h5>What you should do</h5>
+                        <div className="col-12 col-md-6 col-lg-6 mb-5">
+                            <h5>What you <span className="do">should do</span></h5>
                             <div className="row mt-5">
                                 <div className="col-12 mb-4">
                                     <div className="card">
@@ -74,7 +74,7 @@ class HowTo extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-6"><h5>What you shouldn't do</h5>
+                        <div className="col-12 col-md-6 col-lg-6 mb-5"><h5>What you <span className="dont">shouldn't do</span></h5>
                             <div className="row mt-5">
                                 <div className="col-12 mb-4">
                                     <div className="card">

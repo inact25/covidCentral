@@ -24,22 +24,22 @@ class Symptom extends Component {
                             <div className="symptom-list">
                                 <div className="row">
                                     <div className="col-12 col-md-6 col-lg-6 mb-3">
-                                        <span className="text-success"><AiFillCheckCircle/></span> Hard Cought
+                                        <span className="checklist"><AiFillCheckCircle/></span> Hard Cought
                                     </div>
                                     <div className="col-12 col-md-6 col-lg-6 mb-3">
-                                        <span className="text-success"><AiFillCheckCircle/></span> Resoiratory Distress
+                                        <span className="checklist"><AiFillCheckCircle/></span> Resoiratory Distress
                                     </div>
                                     <div className="col-12 col-md-6 col-lg-6 mb-3">
-                                        <span className="text-success"><AiFillCheckCircle/></span> Fever
+                                        <span className="checklist"><AiFillCheckCircle/></span> Fever
                                     </div>
                                     <div className="col-12 col-md-6 col-lg-6 mb-3">
-                                        <span className="text-success"><AiFillCheckCircle/></span> Shortness of Breath
+                                        <span className="checklist"><AiFillCheckCircle/></span> Shortness of Breath
                                     </div>
                                     <div className="col-12 col-md-6 col-lg-6 mb-3">
-                                        <span className="text-success"><AiFillCheckCircle/></span> Headache
+                                        <span className="checklist"><AiFillCheckCircle/></span> Headache
                                     </div>
                                     <div className="col-12 col-md-6 col-lg-6 mb-3">
-                                        <span className="text-success"><AiFillCheckCircle/></span> Kidney Failure
+                                        <span className="checklist"><AiFillCheckCircle/></span> Kidney Failure
                                     </div>
                                 </div>
                             </div>

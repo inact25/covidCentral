@@ -9,7 +9,7 @@ class Info extends Component {
                     <div className="row">
                         <div className="col-12 col-md-6 col-lg-6 text-center">
                             <div className="row">
-                                <div className="col-6">
+                                <div className="col-12 col-md-6 col-lg-6">
                                     <div className="card mb-4">
                                         <div className="card-body">
                                             <span className="icon"><MdPets/></span>
@@ -18,7 +18,7 @@ class Info extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-6">
+                                <div className="col-12 col-md-6 col-lg-6">
                                     <div className="card mb-4">
                                         <div className="card-body">
                                             <span className="icon"><WiDayLightWind/></span>
@@ -27,7 +27,7 @@ class Info extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-6">
+                                <div className="col-12 col-md-6 col-lg-6">
                                     <div className="card mb-4">
                                         <div className="card-body">
                                             <span className="icon"><FaHandshake/></span>
@@ -36,7 +36,7 @@ class Info extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-6">
+                                <div className="col-12 col-md-6 col-lg-6">
                                     <div className="card mb-4">
                                         <div className="card-body">
                                             <span className="icon"><BsCircleSquare/></span>
@@ -61,10 +61,10 @@ class Info extends Component {
                                     symptoms to develop. Symptoms may include:</p>
                                 <div className="row">
                                     <div className="col-12 text-white mb-3">
-                                        <span className="text-success"><AiFillCheckCircle/></span> Hard Cought
+                                        <span className="checklist"><AiFillCheckCircle/></span> Hard Cought
                                     </div>
                                     <div className="col-12 text-white mb-3">
-                                        <span className="text-success"><AiFillCheckCircle/></span> Resoiratory Distress
+                                        <span className="checklist"><AiFillCheckCircle/></span> Resoiratory Distress
                                     </div>
                                 </div>
                             </div>
