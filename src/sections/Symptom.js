@@ -8,7 +8,7 @@ class Symptom extends Component {
             <section className="symptom">
                 <div className="container py-5 my-5">
                     <div className="row h-100">
-                        <div className="col-12 col-md-6 col-lg-6 order-2 order-md-1 order-lg-1">
+                        <div className="col-12 col-md-12 col-lg-6 order-2 order-md-2 order-lg-1">
                             <p className="hero-badge">
                                 <AiOutlineInfoCircle/>   Covid-19 Alert
                             </p>
@@ -47,7 +47,7 @@ class Symptom extends Component {
                                 <button className="btn-danger btn-lg btn rounded-pill">Check Symptom</button>
                             </div>
                         </div>
-                        <div className="col-12 col-md-6 col-lg-6 txt-right order-1 order-md-2 order-lg-2">
+                        <div className="col-12 col-md-12 col-lg-6 txt-right order-1 order-md-1 order-lg-2">
                             <img src={symptompsImg} alt="" className="img-fluid"/>
                         </div>
                     </div>

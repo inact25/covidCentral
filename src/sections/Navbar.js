@@ -23,7 +23,7 @@ class Navbar extends Component {
                                 <a className="nav-link" href="#">Blog</a>
                             </li>
                             <li className="nav-item my-auto">
-                                <a className=" rounded-pill btn btn-danger btn-lg ml-3 btn-block" href="#">Contact</a>
+                                <a className="nav-act-btn rounded-pill btn btn-danger btn-lg btn-block" href="#">Contact</a>
                             </li>
                         </ul>
                     </div>

@@ -25,6 +25,12 @@ button.navbar-toggler {
     border: none;
 }
 
+@media only screen and (min-width:990px) {
+    .nav-act-btn {
+        margin-left:1rem !important;
+    }
+}
+
 * {
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -235,7 +241,13 @@ h1, h2, h3, h4, h5 {
     padding-left: 5rem !important;
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 767px) {
+    .cta {
+        margin-bottom: -18rem;
+    }
+}
+
+@media only screen and (max-width: 1205px) {
     .cta-container {
         padding-left: 0 !important;
         padding-right: 0 !important;
@@ -244,10 +256,6 @@ h1, h2, h3, h4, h5 {
     .cta-container .card {
         padding-right: 0rem !important;
         padding-left: 0rem !important;
-    }
-
-    .cta {
-        margin-bottom: -18rem;
     }
 }
 

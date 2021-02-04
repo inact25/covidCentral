@@ -8,7 +8,7 @@ class Hero extends Component {
             <section className="jumbotron">
                 <div className="container hero-container">
                     <div className="row h-100">
-                        <div className="col-12 col-md-6 col-lg-6 my-auto order-2 order-md-1 order-lg-1">
+                        <div className="col-12 col-md-12 col-lg-6 my-auto order-2 order-md-2 order-lg-1">
                             <p className="hero-badge">
                                <AiOutlineInfoCircle/>   Covid-19 Alert
                             </p>
@@ -22,7 +22,7 @@ class Hero extends Component {
                                 <button className="btn-danger btn btn-lg rounded-pill">Check Symptom</button>
                             </div>
                         </div>
-                        <div className="col-12 col-md-6 col-lg-6 order-1 order-md-2 order-lg-2">
+                        <div className="col-12 col-md-12 col-lg-6 order-1 order-md-1 order-lg-2">
                             <img className="img-fluid mb-5" src={banner} alt=""/>
                         </div>
                     </div>

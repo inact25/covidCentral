@@ -7,7 +7,7 @@ class Info extends Component {
             <section className="info">
                 <div className="container py-5 my-5">
                     <div className="row">
-                        <div className="col-12 col-md-6 col-lg-6 text-center">
+                        <div className="col-12 col-md-12 col-lg-6 text-center">
                             <div className="row">
                                 <div className="col-12 col-md-6 col-lg-6">
                                     <div className="card mb-4">
@@ -49,7 +49,7 @@ class Info extends Component {
                             </div>
 
                         </div>
-                        <div className="col-12 col-md-6 col-lg-6 py-auto my-auto">
+                        <div className="col-12 col-md-12 col-lg-6 py-auto my-auto">
                             <p className="hero-badge">
                                 <AiOutlineInfoCircle/> Covid-19 Alert
                             </p>
