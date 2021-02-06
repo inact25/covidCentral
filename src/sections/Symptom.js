@@ -10,7 +10,7 @@ class Symptom extends Component {
                     <div className="row h-100">
                         <div className="col-12 col-md-12 col-lg-6 order-2 order-md-2 order-lg-1">
                             <p className="hero-badge">
-                                <AiOutlineInfoCircle/>   Covid-19 Alert
+                                <AiOutlineInfoCircle/> Covid-19 Symptoms
                             </p>
                             <div className="symptom-title">
                                 <h2>

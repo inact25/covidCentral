@@ -13,12 +13,12 @@ class About extends Component {
                         </div>
                         <div className="col-12 col-md-12 col-lg-6 order-2 order-md-2 order-lg-2">
                             <p className="hero-badge">
-                                <AiOutlineInfoCircle/>   Covid-19 Alert
+                                <AiOutlineInfoCircle/> About Covid-19
                             </p>
                             <div className="about-title">
-                            <h2>
-                                What is novel coronavirus?
-                            </h2>
+                                <h2>
+                                    What is novel coronavirus?
+                                </h2>
                             </div>
                             <div className="about-description">
                             <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered

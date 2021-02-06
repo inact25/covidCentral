@@ -1,5 +1,12 @@
 import React, {Component} from 'react';
-import {AiFillCheckCircle, AiOutlineInfoCircle,MdPets,WiDayLightWind,FaHandshake,BsCircleSquare} from "react-icons/all"
+import {
+    AiFillCheckCircle,
+    AiOutlineInfoCircle,
+    BsCircleSquare,
+    FaHandshake,
+    MdPets,
+    WiDayLightWind
+} from "react-icons/all"
 
 class Info extends Component {
     render() {
@@ -51,7 +58,7 @@ class Info extends Component {
                         </div>
                         <div className="col-12 col-md-12 col-lg-6 py-auto my-auto">
                             <p className="hero-badge">
-                                <AiOutlineInfoCircle/> Covid-19 Alert
+                                <AiOutlineInfoCircle/> Covid-19 Contagion
                             </p>
                             <h2>
                                 How does novel coronavirus spread?
