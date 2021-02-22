@@ -8,7 +8,7 @@ class About extends Component {
             <section className="about">
                 <div className="container py-5 my-5">
                     <div className="row">
-                        <div className="col-12 col-md-12 col-lg-6 order-1 order-md-1 order-lg-1">
+                        <div className="col-12 col-md-12 col-lg-6 order-1 order-md-1 order-lg-1 text-center">
                             <img src={aboutImg} alt="" className="img-fluid"/>
                         </div>
                         <div className="col-12 col-md-12 col-lg-6 order-2 order-md-2 order-lg-2">

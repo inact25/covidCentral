@@ -20,7 +20,7 @@ const Hero = (props) => {
                             <button className="btn-danger btn btn-lg rounded-pill">{heroActionText}</button>
                         </div>
                     </div>
-                    <div className="col-12 col-md-12 col-lg-6 order-1 order-md-1 order-lg-2">
+                    <div className="col-12 col-md-12 col-lg-6 order-1 order-md-1 order-lg-2 text-center">
                         <img className="img-fluid mb-5" src={image} alt=""/>
                     </div>
                 </div>
