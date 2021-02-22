@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {heroBadge, heroTitle} from "../variables/HeroData";
+import Hero from "../components/Hero"
 
-class Hero extends Component {
+class HeroSection extends Component {
     render() {
         return (
             <Hero badgeIcon={heroBadge.icon} badgeText={heroBadge.text} heroTitle={heroTitle.title}
@@ -11,4 +12,4 @@ class Hero extends Component {
 
 }
 
-export default Hero;
+export default HeroSection;

@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Hero = () => {
-    const {badgeIcon, badgeText, heroTitle, heroSubtitle, heroActionText, image} = this.props
+const Hero = (props) => {
+    const {badgeIcon, badgeText, heroTitle, heroSubtitle, heroActionText, image} = props
     return (
         <section className="hero jumbotron">
             <div className="container hero-container">

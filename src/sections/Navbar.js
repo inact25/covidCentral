@@ -6,7 +6,7 @@ class Navbar extends Component {
         return (
             <nav className="shadow fixed-top navbar navbar-expand-lg navbar-light bg-white py-3">
                 <div className="container">
-                    <a className="navbar-brand" href="#">{siteTitle}</a>
+                    <a className="navbar-brand" href="/">{siteTitle}</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                             aria-label="Toggle navigation">

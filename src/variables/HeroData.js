@@ -1,6 +1,6 @@
 import {AiOutlineInfoCircle} from "react-icons/all";
 import React from "react";
-import banner from '../assets/img/heroImg.png'
+import banner from '../assets/img/HeroImg.png'
 
 export const heroBadge = {
     icon: <AiOutlineInfoCircle/>,
