@@ -290,8 +290,16 @@ h1, h2, h3, h4, h5 {
 }
 
 section {
-    padding-right: 3rem !important;
-    padding-left: 3rem !important;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+@media only screen and (max-width: 767px) {
+    section {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
 }
 
 /*Footer*/

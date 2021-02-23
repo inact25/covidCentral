@@ -25,12 +25,13 @@ class HowTo extends Component {
                                     <div className="card">
                                         <div className="card-body">
                                             <div className="row">
-                                                <div className="col-4 d-flex flex-wrap align-items-center">
+                                                <div
+                                                    className="col-12 mb-3 col-md-4 d-flex flex-wrap align-items-center">
                                                     <img
                                                         src={service1}
                                                         alt="" className="img-fluid m-auto"/>
                                                 </div>
-                                                <div className="col-8 text-left">
+                                                <div className="col-12 col-md-8 text-center text-md-left">
                                                     <h5>Wear Facemask</h5>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                                 </div>
@@ -42,12 +43,13 @@ class HowTo extends Component {
                                     <div className="card">
                                         <div className="card-body">
                                             <div className="row">
-                                                <div className="col-4 d-flex flex-wrap align-items-center">
+                                                <div
+                                                    className="col-12 mb-3 col-md-4 d-flex flex-wrap align-items-center">
                                                     <img
                                                         src={service2}
                                                         alt="" className="img-fluid m-auto"/>
                                                 </div>
-                                                <div className="col-8 text-left">
+                                                <div className="col-12 col-md-8 text-center text-md-left">
                                                     <h5>Cover Face When Coughing</h5>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                                 </div>
@@ -59,12 +61,13 @@ class HowTo extends Component {
                                     <div className="card">
                                         <div className="card-body">
                                             <div className="row">
-                                                <div className="col-4 d-flex flex-wrap align-items-center">
+                                                <div
+                                                    className="col-12 mb-3 col-md-4 d-flex flex-wrap align-items-center">
                                                     <img
                                                         src={service3}
                                                         alt="" className="img-fluid m-auto"/>
                                                 </div>
-                                                <div className="col-8 text-left">
+                                                <div className="col-12 col-md-8 text-center text-md-left">
                                                     <h5>Wash Your Hand Frequently</h5>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                                 </div>
@@ -80,12 +83,13 @@ class HowTo extends Component {
                                     <div className="card">
                                         <div className="card-body">
                                             <div className="row">
-                                                <div className="col-4 d-flex flex-wrap align-items-center">
+                                                <div
+                                                    className="col-12 mb-3 col-md-4 d-flex flex-wrap align-items-center">
                                                     <img
                                                         src={service4}
                                                         alt="" className="img-fluid m-auto"/>
                                                 </div>
-                                                <div className="col-8 text-left">
+                                                <div className="col-12 col-md-8 text-center text-md-left">
                                                     <h5>Avoid Animal Contact</h5>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                                 </div>
@@ -97,12 +101,13 @@ class HowTo extends Component {
                                     <div className="card">
                                         <div className="card-body">
                                             <div className="row">
-                                                <div className="col-4 d-flex flex-wrap align-items-center">
+                                                <div
+                                                    className="col-12 mb-3 col-md-4 d-flex flex-wrap align-items-center">
                                                     <img
                                                         src={service5}
                                                         alt="" className="img-fluid m-auto"/>
                                                 </div>
-                                                <div className="col-8 text-left">
+                                                <div className="col-12 col-md-8 text-center text-md-left">
                                                     <h5>Avoid Markets and Crowd</h5>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                                 </div>
@@ -114,12 +119,13 @@ class HowTo extends Component {
                                     <div className="card">
                                         <div className="card-body">
                                             <div className="row">
-                                                <div className="col-4 d-flex flex-wrap align-items-center">
+                                                <div
+                                                    className="col-12 mb-3 col-md-4 d-flex flex-wrap align-items-center">
                                                     <img
                                                         src={service6}
                                                         alt="" className="img-fluid m-auto"/>
                                                 </div>
-                                                <div className="col-8 text-left">
+                                                <div className="col-12 col-md-8 text-center text-md-left">
                                                     <h5>Seek Medical Care</h5>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                                 </div>
