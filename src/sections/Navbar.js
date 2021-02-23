@@ -16,7 +16,8 @@ class Navbar extends Component {
                         <ul className="navbar-nav">
                             {navLink.map(item =>
                                 <li className="nav-item my-auto">
-                                    <a className="nav-link active" aria-current="page" href={item.url}>{item.title}</a>
+                                    <a className="nav-link active mx-3 mb-3 mb-md-0" aria-current="page"
+                                       href={item.url}>{item.title}</a>
                                 </li>
                             )}
                             <li className="nav-item my-auto">

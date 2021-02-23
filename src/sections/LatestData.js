@@ -1,29 +1,106 @@
 import React, {Component} from 'react';
 import CanvasJSReact from '../assets/js/canvasjs.react';
+import {getAllData, getStats} from "../services/apis/CovidApi";
+import withReactContent from 'sweetalert2-react-content'
+import Swal from "sweetalert2";
+import {CFormater} from "../services/tools/CFormater";
+
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 
 class LatestData extends Component {
-    constructor() {
-        super();
+    state = {
+        data: [],
+        allData: [],
+        isLoaded: false
+    }
+
+    constructor(props) {
+        super(props);
         this.toggleDataSeries = this.toggleDataSeries.bind(this);
     }
-    toggleDataSeries(e){
-        if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+
+    toggleDataSeries(e) {
+        if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
             e.dataSeries.visible = false;
-        }
-        else{
+        } else {
             e.dataSeries.visible = true;
         }
         this.chart.render();
     }
+
+    getStatsData = () => {
+        getStats()
+            .then((res) => {
+                this.setState({
+                    data: res.data,
+                    isLoaded: true
+                })
+            }).catch(() => {
+            Swal.fire("Oops", "Connection Timeout !!!", "error")
+        })
+    }
+    getAllData = () => {
+        getAllData()
+            .then((res) => {
+                this.setState({
+                    allData: res,
+                    isLoaded: true
+                })
+            }).catch(() => {
+            Swal.fire("Oops", "Connection Timeout !!!", "error")
+        })
+    }
+
+    componentDidMount() {
+        this.getStatsData()
+        this.getAllData()
+    }
+
+    openAllData = () => {
+        const datas = this.state.allData
+        const MySwal = withReactContent(Swal)
+        MySwal.fire({
+                title: '',
+                html: <div className="table-responsive mt-5">
+                    <table className="table table-hover">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col" className="text-left">Country</th>
+                            <th scope="col" className="text-right text-danger">Confirmed</th>
+                            <th scope="col" className="text-right text-danger">Critical</th>
+                            <th scope="col" className="text-right text-success">Recovered</th>
+                            <th scope="col" className="text-right text-danger">Deaths</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {datas.map((item, index) =>
+                            <tr>
+                                <th scope="row">{index}</th>
+                                <td className="text-left">{item.country}</td>
+                                <td className="text-right text-danger">{CFormater(item.confirmed)}</td>
+                                <td className="text-right text-danger">{CFormater(item.critical)}</td>
+                                <td className="text-right text-success">{CFormater(item.recovered)}</td>
+                                <td className="text-right text-danger">{CFormater(item.deaths)}</td>
+                            </tr>
+                        )}
+                        </tbody>
+                    </table>
+                </div>
+            }
+        )
+    }
+
     render() {
+        const stats = this.state.data
+        console.log(this.state.allData)
         const options = {
             theme: "light2",
             animationEnabled: true,
             exportEnabled: true,
             title: {
-                    text: ""
+                text: ""
             },
             axisY: {
                 title: "Covid data"
@@ -43,62 +120,37 @@ class LatestData extends Component {
                     type: "stackedArea",
                     name: "confirmed",
                     showInLegend: true,
-                    xValueFormatString: "YYYY",
-                    dataPoints: [
-                        {x: new Date(1990, 0), y: 339},
-                        {x: new Date(2000, 0), y: 448},
-                        {x: new Date(2010, 0), y: 588},
-                        {x: new Date(2016, 0), y: 616}
-                    ]
+                    dataPoints: stats.map(item => {
+                        return {x: new Date(item.date), y: item.confirmed}
+                    })
                 },
                 {
                     type: "stackedArea",
                     name: "recovered",
                     showInLegend: true,
-                    xValueFormatString: "YYYY",
-                    dataPoints: [
-                        {x: new Date(1990, 0), y: 63},
-                        {x: new Date(2000, 0), y: 100},
-                        {x: new Date(2010, 0), y: 149},
-                        {x: new Date(2016, 0), y: 152}
-                    ]
+                    xValueFormatString: "MMMM YYYY",
+                    dataPoints: stats.map(item => {
+                        return {x: new Date(item.date), y: item.recovered}
+                    })
                 },
                 {
                     type: "stackedArea",
                     name: "critical",
                     showInLegend: true,
-                    xValueFormatString: "YYYY",
-                    dataPoints: [
-                        {x: new Date(1990, 0), y: 48},
-                        {x: new Date(2000, 0), y: 100},
-                        {x: new Date(2010, 0), y: 119},
-                        {x: new Date(2016, 0), y: 107},
-                    ]
+                    xValueFormatString: "MMMM YYYY",
+                    dataPoints: stats.map(item => {
+                        return {x: new Date(item.date), y: item.critical}
+                    })
                 },
                 {
                     type: "stackedArea",
                     name: "deaths",
                     showInLegend: true,
-                    xValueFormatString: "YYYY",
-                    dataPoints: [
-                        {x: new Date(1990, 0), y: 7 },
-                        {x: new Date(2000, 0), y: 45},
-                        {x: new Date(2010, 0), y: 243},
-                        {x: new Date(2016, 0), y: 450},
-                    ]
+                    xValueFormatString: "MMMM YYYY",
+                    dataPoints: stats.map(item => {
+                        return {x: new Date(item.date), y: item.deaths}
+                    })
                 },
-                {
-                    type: "stackedArea",
-                    name: "active",
-                    showInLegend: true,
-                    xValueFormatString: "YYYY",
-                    dataPoints: [
-                        {x: new Date(1990, 0), y: 6},
-                        {x: new Date(2000, 0), y: 22},
-                        {x: new Date(2010, 0), y: 49},
-                        {x: new Date(2016, 0), y: 91},
-                    ]
-                }
             ]
         }
         return (
@@ -108,15 +160,19 @@ class LatestData extends Component {
                         <div className="col-12 text-center mb-5">
                             <h2>Latest Data</h2>
                         </div>
-                        <div className="col-12 text-center">
+                        <div className="col-12 text-center mb-5">
                             <div>
                                 <div>
-                                    <CanvasJSChart options = {options}
+                                    <CanvasJSChart options={options}
                                                    onRef={ref => this.chart = ref}
                                     />
-                                    {/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
                                 </div>
                             </div>
+                        </div>
+                        <div className="col-12 data-table text-center">
+                            <button onClick={this.openAllData}
+                                    className="btn-outline-danger btn-lg btn rounded-pill">See all data
+                            </button>
                         </div>
                     </div>
                 </div>
