@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import symptompsImg from "../assets/img/Symptoms.jpg"
+import symptompsImg from "../assets/img/Symptoms.png"
 import {AiFillCheckCircle, AiOutlineInfoCircle} from "react-icons/all"
 
 class Symptom extends Component {
